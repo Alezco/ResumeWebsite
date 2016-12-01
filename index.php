@@ -10,35 +10,46 @@
   <link href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css" rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,700" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,700" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/smoothscroll.js"></script>
   <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script type="text/javascript" src='js/bootstrap.js'></script>
 </head>
 
 <body>
-  <div id="section-topbar">
-    <div id="topbar-inner">
-      <div class="container">
-        <div class="row">
-          <div class="dropdown">
-            <ul id="nav" class="nav">
-              <li class="menu-item"><a class="smoothScroll" href="#intro" title="Intro"><i class="icon-chevron-up"></i>  INTRODUCTION</a></li>
-              <li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="icon-user"></i>  A PROPOS</a></li>
-              <li class="menu-item"><a class="smoothScroll" href="#studies" title="Studies"><i class="icon-file"></i>  FORMATION</a></li>
-              <li class="menu-item"><a class="smoothScroll" href="#work" title="Works"><i class="icon-briefcase"></i>  EXPERIENCE</a></li>
-              <li class="menu-item"><a class="smoothScroll" href="#skills" title="Skills"><i class="icon-code"></i>  COMPETENCES</a></li>
-              <li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="icon-envelope"></i>  CONTACT</a></li>
-              <li class="menu-item"><a class="smoothScroll" href="#info" title="Information"><i class="icon-info"></i>  INFORMATIONS</a></li>
-            </ul>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div id="section-topbar">
+      <div id="topbar-inner">
+        <div class="container">
+          <div class="row">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li class="menu-item"><a class="smoothScroll" href="#intro" title="Intro"><i class="icon-chevron-up"></i>  INTRODUCTION</a></li>
+                <li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="icon-user"></i>  A PROPOS</a></li>
+                <li class="menu-item"><a class="smoothScroll" href="#studies" title="Studies"><i class="icon-file"></i>  FORMATION</a></li>
+                <li class="menu-item"><a class="smoothScroll" href="#work" title="Works"><i class="icon-briefcase"></i>  EXPERIENCE</a></li>
+                <li class="menu-item"><a class="smoothScroll" href="#skills" title="Skills"><i class="icon-code"></i>  COMPETENCES</a></li>
+                <li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="icon-envelope"></i>  CONTACT</a></li>
+                <li class="menu-item"><a class="smoothScroll" href="#info" title="Information"><i class="icon-info"></i>  INFORMATIONS</a></li>
+              </ul>
+            </div>
+            <div class="clear"></div>
           </div>
-          <div class="clear"></div>
         </div>
-      </div>
-      <div class="clear"></div>
+        <div class="clear"></div>
     </div>
   </div>
+  </nav>
 
   <section id="intro" name="intro"></section>
   <div class="header" id="headerwrap">
@@ -121,7 +132,7 @@
           <t>Stagiaire </t><br/> Adenova <br/>
         </p>
         <p>
-          <more>Adenova est une start-up qui développe des web-apps pour des clients tels que Microsoft, Le Monde ou 750 grammes.</more>
+          <more>Adenova est une start-up qui développe des applications mobile et web pour des clients tels que Le Monde, 750 grammes ou Explolab.</more>
         </p>
       </div>
       <div class="col-lg-3">
@@ -184,22 +195,32 @@
           <br>
           <p>CSS3</p>
         </div>
+		<div class="col-lg-3 centered">
+  		<i class="devicon-drupal-plain colored"></i>
+          <br>
+          <p>Drupal</p>
+        </div>
         <div class="col-lg-3 centered">
           <i class="devicon-git-plain colored"></i>
           <br>
           <p>Git</p>
+        </div>
+		<div class="col-lg-3 col-lg-offset-3 centered">
+          <i class="devicon-gulp-plain colored"></i>
+          <br>
+          <p>Gulp</p>
         </div>
         <div class="col-lg-3 centered">
           <i class="devicon-html5-plain colored"></i>
           <br>
           <p>HTML5</p>
         </div>
-        <div class="col-lg-3 col-lg-offset-3 centered">
+        <div class="col-lg-3 centered">
           <i class="devicon-java-plain colored"></i>
           <br>
           <p>Java</p>
         </div>
-        <div class="col-lg-3 centered">
+        <div class="col-lg-3 col-lg-offset-3 centered">
           <i class="devicon-javascript-plain colored"></i>
           <br>
           <p>Javascript</p>
@@ -209,22 +230,33 @@
           <br>
           <p>Linux</p>
         </div>
+		<div class="col-lg-3 centered">
+          <i class="devicon-mongodb-plain colored"></i>
+          <br>
+          <p>MongoDB</p>
+        </div>
         <div class="col-lg-3 col-lg-offset-3 centered">
           <i class="devicon-mysql-plain colored"></i>
           <br>
           <p>MySQL</p>
         </div>
+		<div class="col-lg-3 centered">
+         <i class="devicon-nodejs-plain colored"></i>
+          <br>
+          <p>Node.js</p>
+        </div>
+		
         <div class="col-lg-3 centered">
           <i class="devicon-postgresql-plain colored"></i>
           <br>
           <p>PostgreSQL</p>
         </div>
-        <div class="col-lg-3 centered">
+        <div class="col-lg-3 col-lg-offset-3 centered">
           <i class="devicon-python-plain colored"></i>
           <br>
           <p>Python</p>
         </div>
-        <div class="col-lg-3 col-lg-offset-3 centered">
+        <div class="col-lg-3 centered">
           <i class="devicon-sass-plain colored"></i>
           <br>
           <p>SASS</p>
@@ -234,10 +266,21 @@
           <br>
           <p>Ubuntu</p>
         </div>
+		<div class="col-lg-3 col-lg-offset-3 centered">
+		  <i class="devicon-vim-plain colored"></i>
+          <br>
+          <p>Vim</p>
+        </div>
+
         <div class="col-lg-3 centered">
           <i class="devicon-windows8-plain colored"></i>
           <br>
           <p>Windows</p>
+        </div>
+		<div class="col-lg-3 centered">
+          <i class="devicon-wordpress-plain colored"></i>
+          <br>
+          <p>Wordpress</p>
         </div>
       </div>
       <br>
