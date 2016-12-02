@@ -286,24 +286,24 @@
             <div class="input-group col-sm-10">
               <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
               <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Prénom" value="">
-              <!--<?php echo "<p class='text-danger'>$errFirstame</p>";?>-->
             </div>
+			<?php echo "<p class='text-danger'>$errFirstame</p>";?>
           </div>
           <div class="form-group">
             <label for="name" class="col-sm-2 control-label">Nom</label>
             <div class="input-group col-sm-10">
               <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
               <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Nom" value="">
-              <!--<?php echo "<p class='text-danger'>$errLastame</p>";?>-->
             </div>
+			<?php echo "<p class='text-danger'>$errLastame</p>";?>
           </div>
           <div class="form-group">
             <label for="email" class="col-sm-2 control-label">Email</label>
             <div class="input-group col-sm-10">
               <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
               <input type="email" class="form-control" id="email" name="email" placeholder="Email" value="">
-              <!--<?php echo "<p class='text-danger'>$errMail</p>";?>-->
             </div>
+			<?php echo "<p class='text-danger'>$errMail</p>";?>
           </div>
           <div class="form-group">
             <label for="verif" class="col-sm-2 control-label">Vérification</label>
@@ -315,16 +315,16 @@
             <label for="message" class="col-sm-2 control-label">Message</label>
             <div class="col-sm-10">
               <textarea class="form-control" rows="4" id="message" name="message" value=""></textarea>
-              <!--<?php echo "<p class='text-danger'>$errMessage</p>";?>-->
             </div>
+			<?php echo "<p class='text-danger'>$errMessage</p>";?>
           </div>
           <div class="form-group">
             <div class="col-sm-10 col-sm-offset-2">
-              <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+              <input id="submit" name="submit" type="submit" value="Envoyer" class="btn btn-primary">
             </div>
           </div>
           <div class="form-group">
-            <div class="col-sm-10 col-sm-offset-2">
+            <div class="col-sm-10 col-sm-offset-2" id="result">
               <?php echo $result; ?>
             </div>
           </div>
@@ -368,35 +368,7 @@
     </div>
   </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script>
-$(function() {
-  $('#submit').click(function(e) {
-      e.preventDefault();
-      sendForm();
-      return false;
-  });
 
-  function getInputValue(name) {
-    return $('input[name="' + name + '"]').val();
-  }
-
-  function getTextAreaValue(name) {
-    return $('textarea[name="' + name + '"]').val();
-  }
-
-  function sendForm() {
-    $.ajax({
-    method: "POST",
-    url: "form.php",
-    data: { firstname: getInputValue('firstname'), lastname: getInputValue('lastname'), email: getInputValue('email'), message: getTextAreaValue('message') }
-    })
-    .done(function(msg) {
-      console.log('Got : ' + msg + ' from form.php !');
-      $('#mydiv').append('html code');
-    });
-  }
-});
-</script>
 <script>
 $(window).scroll(function() {
     var windscroll = $(window).scrollTop();
