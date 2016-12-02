@@ -36,6 +36,16 @@ p {
   color: #fff;
 }
 
+#section-topbar a:hover {
+  background-color: #5bc0de;
+  color: black;
+}
+
+#section-topbar a.active {
+  background-color: #5bc0de;
+  color: black;
+}
+
 #topbar-inner {
 	background: #34495e;
 	line-height: 0;

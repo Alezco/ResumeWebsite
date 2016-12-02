@@ -34,13 +34,13 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
               <ul class="nav navbar-nav">
-                <li class="menu-item"><a class="smoothScroll" href="#intro" title="Intro"><i class="icon-chevron-up"></i>  INTRODUCTION</a></li>
-                <li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="icon-user"></i>  A PROPOS</a></li>
-                <li class="menu-item"><a class="smoothScroll" href="#studies" title="Studies"><i class="icon-file"></i>  FORMATION</a></li>
-                <li class="menu-item"><a class="smoothScroll" href="#work" title="Works"><i class="icon-briefcase"></i>  EXPERIENCE</a></li>
-                <li class="menu-item"><a class="smoothScroll" href="#skills" title="Skills"><i class="icon-code"></i>  COMPETENCES</a></li>
-                <li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="icon-envelope"></i>  CONTACT</a></li>
-                <li class="menu-item"><a class="smoothScroll" href="#info" title="Information"><i class="icon-info"></i>  INFORMATIONS</a></li>
+                <li class="menu-item"><a class="smoothScroll" href="#intro" title="Intro" data-scroll="intro"><i class="icon-chevron-up"></i>  INTRODUCTION</a></li>
+                <li class="menu-item"><a class="smoothScroll" href="#about" title="About" data-scroll="about"><i class="icon-user"></i>  A PROPOS</a></li>
+                <li class="menu-item"><a class="smoothScroll" href="#studies" title="Studies" data-scroll="studies"><i class="icon-file"></i>  FORMATION</a></li>
+                <li class="menu-item"><a class="smoothScroll" href="#work" title="Works" data-scroll="work"><i class="icon-briefcase"></i>  EXPERIENCE</a></li>
+                <li class="menu-item"><a class="smoothScroll" href="#skills" title="Skills" data-scroll="skills"><i class="icon-code"></i>  COMPETENCES</a></li>
+                <li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact" data-scroll="contact"><i class="icon-envelope"></i>  CONTACT</a></li>
+                <li class="menu-item"><a class="smoothScroll" href="#info" title="Information" data-scroll="info"><i class="icon-info"></i>  INFORMATIONS</a></li>
               </ul>
             </div>
             <div class="clear"></div>
@@ -50,8 +50,8 @@
     </div>
   </div>
   </nav>
-
-  <section id="intro" name="intro"></section>
+  
+  <section id="intro" name="intro" data-anchor="intro"></section>
   <div class="header" id="headerwrap">
     <div class="container">
       <div class="row centered">
@@ -66,7 +66,7 @@
     </div>
   </div>
 
-  <section id="about" name="about"></section>
+  <section id="about" name="about" data-anchor="about"></section>
   <div class="about">
     <div class="container">
       <div class="row">
@@ -84,7 +84,7 @@
     </div>
   </div>
 
-  <section id="studies" name="studies"></section>
+  <section id="studies" name="studies" data-anchor="studies"></section>
   <div class="container desc">
     <div class="row">
       <div class="col-lg-2 col-lg-offset-1">
@@ -121,7 +121,7 @@
     <hr>
   </div>
 
-  <section id="work" name="work"></section>
+  <section id="work" name="work" data-anchor="work"></section>
   <div class="container desc">
     <div class="row">
       <div class="col-lg-2 col-lg-offset-1">
@@ -153,7 +153,7 @@
     <br>
   </div>
 
-  <section id="skills" name="skills"></section>
+  <section id="skills" name="skills" data-anchor="skills"></section>
   <div class="skills">
     <div class="container desc">
       <div class="row">
@@ -271,7 +271,7 @@
     </div>
   </div>
 
-  <section id="contact" name="contact"></section>
+  <section id="contact" name="contact" data-anchor="contact"></section>
   <div class="container desc">
     <div class="row">
       <div class="col-lg-2 col-lg-offset-1">
@@ -333,7 +333,7 @@
     </div>
   </div>
 
-  <section id="info" name="info"></section>
+  <section id="info" name="info" data-anchor="info"></section>
   <div id="footwrap" class="footer">
     <div class="container desc">
       <div class="row">
@@ -396,6 +396,23 @@ $(function() {
     });
   }
 });
+</script>
+<script>
+$(window).scroll(function() {
+    var windscroll = $(window).scrollTop();
+    if (windscroll >= 100) {
+        $('section').each(function(i) {
+            if ($(this).position().top <= windscroll) {
+                $('#section-topbar a.active').removeClass('active');
+                $('#section-topbar a').eq(i).addClass('active');
+            }
+        });
+    } else {
+        $('#section-topbar a.active').removeClass('active');
+        $('#section-topbar a:first').addClass('active');
+    }
+}).scroll();
+
 </script>
 </body>
 
