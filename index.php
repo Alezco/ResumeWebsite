@@ -195,22 +195,17 @@
           <br>
           <p>CSS3</p>
         </div>
-		<div class="col-lg-3 centered">
-  		<i class="devicon-drupal-plain colored"></i>
-          <br>
-          <p>Drupal</p>
-        </div>
         <div class="col-lg-3 centered">
           <i class="devicon-git-plain colored"></i>
           <br>
           <p>Git</p>
         </div>
-		<div class="col-lg-3 col-lg-offset-3 centered">
+		<div class="col-lg-3 centered">
           <i class="devicon-gulp-plain colored"></i>
           <br>
           <p>Gulp</p>
         </div>
-        <div class="col-lg-3 centered">
+        <div class="col-lg-3 col-lg-offset-3 centered">
           <i class="devicon-html5-plain colored"></i>
           <br>
           <p>HTML5</p>
@@ -220,12 +215,12 @@
           <br>
           <p>Java</p>
         </div>
-        <div class="col-lg-3 col-lg-offset-3 centered">
+        <div class="col-lg-3 centered">
           <i class="devicon-javascript-plain colored"></i>
           <br>
           <p>Javascript</p>
         </div>
-        <div class="col-lg-3 centered">
+        <div class="col-lg-3 col-lg-offset-3 centered">
           <i class="devicon-linux-plain colored"></i>
           <br>
           <p>Linux</p>
@@ -235,12 +230,12 @@
           <br>
           <p>MongoDB</p>
         </div>
-        <div class="col-lg-3 col-lg-offset-3 centered">
+        <div class="col-lg-3 centered">
           <i class="devicon-mysql-plain colored"></i>
           <br>
           <p>MySQL</p>
         </div>
-		<div class="col-lg-3 centered">
+		<div class="col-lg-3 col-lg-offset-3 centered">
          <i class="devicon-nodejs-plain colored"></i>
           <br>
           <p>Node.js</p>
@@ -251,12 +246,12 @@
           <br>
           <p>PostgreSQL</p>
         </div>
-        <div class="col-lg-3 col-lg-offset-3 centered">
+        <div class="col-lg-3 centered">
           <i class="devicon-python-plain colored"></i>
           <br>
           <p>Python</p>
         </div>
-        <div class="col-lg-3 centered">
+        <div class="col-lg-3 col-lg-offset-3 centered">
           <i class="devicon-sass-plain colored"></i>
           <br>
           <p>SASS</p>
@@ -266,21 +261,10 @@
           <br>
           <p>Ubuntu</p>
         </div>
-		<div class="col-lg-3 col-lg-offset-3 centered">
-		  <i class="devicon-vim-plain colored"></i>
-          <br>
-          <p>Vim</p>
-        </div>
-
         <div class="col-lg-3 centered">
           <i class="devicon-windows8-plain colored"></i>
           <br>
           <p>Windows</p>
-        </div>
-		<div class="col-lg-3 centered">
-          <i class="devicon-wordpress-plain colored"></i>
-          <br>
-          <p>Wordpress</p>
         </div>
       </div>
       <br>
@@ -374,10 +358,10 @@
             <sm>LIENS</sm>
           </p>
           <p>
-            <a href="https://www.linkedin.com/nhome/"><i class="icon-linkedin"></i></a>
-            <a href="https://github.com/Alezco"><i class="icon-github"></i></a>
-            <a href="https://www.facebook.com/benjamin.morali4"><i class="icon-facebook"></i></a>
-            <a href="https://twitter.com/Alezco_"><i class="icon-twitter"></i></a>
+            <a target="_blank" href="https://fr.linkedin.com/in/benjamin-morali-6867762b"><i class="icon-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/Alezco"><i class="icon-github"></i></a>
+            <a target="_blank" href="https://www.facebook.com/benjamin.morali4"><i class="icon-facebook"></i></a>
+            <a target="_blank" href="https://twitter.com/Alezco_"><i class="icon-twitter"></i></a>
           </p>
         </div>
       </div>
