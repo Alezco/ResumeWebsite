@@ -362,6 +362,7 @@
             <a target="_blank" href="https://github.com/Alezco"><i class="icon-github"></i></a>
             <a target="_blank" href="https://www.facebook.com/benjamin.morali4"><i class="icon-facebook"></i></a>
             <a target="_blank" href="https://twitter.com/Alezco_"><i class="icon-twitter"></i></a>
+			<a href="//benjaminmorali.fr/projects"><i class="icon-code"></i></a>
           </p>
         </div>
       </div>
