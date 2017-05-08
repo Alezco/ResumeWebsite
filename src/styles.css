@@ -1,6 +1,5 @@
 body {
   background-color: #f2f2f2;
-  font-family: "Lato";
   font-weight: 300;
   font-size: 16px;
   color: #555;
@@ -86,12 +85,17 @@ p {
 	font-size: 15px;
 }
 
+
+#profile-picture {
+  width: 15%;
+  height: 15%;
+}
+
 a {
   color: #5bc0de;
   word-wrap: break-word;
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
   -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
   -o-transition: color 0.1s ease-in, background 0.1s ease-in;
   transition: color 0.1s ease-in, background 0.1s ease-in;
 }
@@ -105,7 +109,6 @@ a:hover, a:focus {
 a:before, a:after {
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
   -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
   -o-transition: color 0.1s ease-in, background 0.1s ease-in;
   transition: color 0.1s ease-in, background 0.1s ease-in;
 }
@@ -121,21 +124,12 @@ hr {
 
 .header {
   background: #DDDDDD;
-  background: url(../img/header-bg.jpg) no-repeat center top;
+  background: url(assets/img/header-bg.jpg) no-repeat center top;
   padding-top:140px;
   text-align:center;
-  background-attachment: relative;
   background-position: center center;
   min-height: 500px;
   width: 100%;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .header h1 {
@@ -157,7 +151,7 @@ hr {
   padding-top: 60px;
   padding-bottom: 60px;
   color: white;
-} 
+}
 
 .about h5, p {
   color: white;
@@ -184,10 +178,6 @@ hr {
   color: white;
 }
 
-.footer t {
-  font-weight: 700;
-}
-
 .footer i {
   padding-right: 8px;
 }
@@ -200,23 +190,15 @@ hr {
   color: #2f2f2f;
 }
 
-.desc t {
+.small-title {
   color: #34495e;
   font-weight: 700;
 }
 
-.desc imp {
+.ongoing {
   padding: 6px;
   color: white;
   background: #34495e;
-}
-
-.desc more {
-  color: #616669;
-}
-
-sm {
-  font-size: 12px;
 }
 
 .desc .col-lg-3 {
@@ -251,10 +233,6 @@ sm {
 }
 
 .skills p {
-  color: white;
-}
-
-.footer t {
   color: white;
 }
 
