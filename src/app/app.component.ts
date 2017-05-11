@@ -6,10 +6,16 @@ import { TranslateService } from 'ng2-translate';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  constructor(translate: TranslateService) {
-    translate.addLangs(['en', 'fr']);
-    translate.setDefaultLang('fr');
-    const lang = translate.getBrowserLang();
-    translate.use(lang.match(/en|fr/) ? lang : 'fr');
+  lang: string = this._translateService.getBrowserLang();
+
+  constructor(private _translateService: TranslateService) {
+    this._translateService.addLangs(['en', 'fr']);
+    this._translateService.setDefaultLang('fr');
+    this._translateService.use(this.lang.match(/en|fr/) ? this.lang : 'fr');
+  }
+
+  public getResume(): string {
+    const path = '../assets/documents/';
+    return this.lang === 'fr' ? path + 'cv.pdf' : path + 'cv_en.pdf';
   }
 }
