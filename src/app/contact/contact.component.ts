@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ContactService } from './contact.service';
 import { Email } from './email-interface';
+import {TranslateService} from "ng2-translate";
 
 @Component({
   selector: 'app-contact',
@@ -14,7 +15,7 @@ export class ContactComponent {
     message: ''
   };
 
-  constructor(private _contactService: ContactService) { }
+  constructor(private _contactService: ContactService, private _translateService: TranslateService) { }
 
   onSubmit() {
     this._contactService.postEmail(this.message).subscribe(
@@ -26,10 +27,10 @@ export class ContactComponent {
   handleResponse(response) {
     if (response.status === 'success') {
       this.message = {name: '', email: '', message: ''};
-      alert('Message envoyé');
+      alert(this._translateService.get('CONTACT.MESSAGESENT'));
     }
     if (response.status === 'error') {
-      alert('Erreur dans l\'envoi du message');
+      alert(this._translateService.get('CONTACT.MESSAGENOTSENT'));
     }
   }
 }

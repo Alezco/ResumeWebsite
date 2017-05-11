@@ -1,0 +1,41 @@
+{
+  "MENU": {
+    "INTRODUCTION" : "INTRODUCTION",
+    "ABOUT" : "ABOUT",
+    "STUDIES" : "STUDIES",
+    "EXPERIENCE" : "EXPERIENCE",
+    "SKILLS" : "SKILLS",
+    "CONTACT" : "CONTACT",
+    "INFORMATION" : "INFORMATION"
+
+  },
+  "MONTHS": {
+    "JUNE": "JUNE",
+    "JULY": "JULY",
+    "SEPTEMBER": "SEPTEMBER",
+    "JANUARY": "JANUARY"
+  },
+  "CONTACT": {
+    "NAME": "Name",
+    "EMAIL": "Email",
+    "MESSAGE": "Message",
+    "SEND": "Send",
+    "MESSAGESENT": "Message sent",
+    "MESSAGENOTSENT": "Error sending email"
+  },
+  "DEVELOPER": "Full-stack developer",
+  "DESCRIPTION": "French web and mobile developer, passionate about new technologies. I currently study at EPITA, a software engineering school",
+  "DOWNLOADCV": "DOWNLOAD RESUME",
+  "SOFTWAREENGINEERING": "Software Engineering",
+  "EPITA": "EPITA - Software engineering school",
+  "ONGOING" : "ONGOING",
+  "ABROAD": "Semester abroad",
+  "BAC": "Scientific Baccalauréat mention fairly well",
+  "DUMAS": "High school Alexandre Dumas",
+  "INTERN": "Intern",
+  "ADENOVADESC": "Adenova is a french start-up that develops mobile and web applications for customers such as Le Monde, 750 grammes or Explolab",
+  "PCSERVDESC": "PC ServiMedia performs software and hardware repairs on phones, tablets and PCs",
+  "ADDRESS": "Address",
+  "PHONE": "Phone",
+  "LIKNS": "LINKS"
+}

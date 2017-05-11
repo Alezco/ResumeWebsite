@@ -239,3 +239,7 @@ hr {
 .footer p {
   color: white;
 }
+
+textarea {
+  resize: none;
+}

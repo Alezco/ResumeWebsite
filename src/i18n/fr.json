@@ -1,0 +1,41 @@
+{
+  "MENU": {
+    "INTRODUCTION" : "INTRODUCTION",
+    "ABOUT" : "A PROPOS",
+    "STUDIES" : "FORMATION",
+    "EXPERIENCE" : "EXPERIENCE",
+    "SKILLS" : "COMPETENCES",
+    "CONTACT" : "CONTACT",
+    "INFORMATION" : "INFORMATIONS"
+
+  },
+  "MONTHS": {
+    "JUNE": "JUIN",
+    "JULY": "JUILLET",
+    "SEPTEMBER": "SEPTEMBRE",
+    "JANUARY": "JANVIER"
+  },
+  "CONTACT": {
+    "NAME": "Nom",
+    "EMAIL": "Email",
+    "MESSAGE": "Message",
+    "SEND": "Envoyer",
+    "MESSAGESENT": "Message envoyé",
+    "MESSAGENOTSENT": "Erreur dans l'envoi du mail"
+  },
+  "DEVELOPER": "Développeur full-stack",
+  "DESCRIPTION": "Développeur web et mobile passionné par les nouvelles technologies. J'étudie actuellement à l'EPITA, école d'ingénieurie en informatique.",
+  "DOWNLOADCV": "TELECHARGER LE CV",
+  "SOFTWAREENGINEERING": "Ingénieurie en informatique",
+  "EPITA": "EPITA - Ecole Pour l'Informatique et les Technologies Avancées",
+  "ONGOING" : "EN COURS",
+  "ABROAD": "Semestre à l'étranger",
+  "BAC": "Baccalauréat S Mention Assez Bien",
+  "DUMAS": "Lycée Alexandre Dumas",
+  "INTERN": "Stagiaire",
+  "ADENOVADESC": "Adenova est une start-up qui développe des applications mobile et web pour des clients tels que Le Monde, 750 grammes ou Explolab.",
+  "PCSERVDESC": "PC ServiMedia effectue des réparations logicielles et matérielles de smartphones, tablettes et PC.",
+  "ADDRESS": "Adresse",
+  "PHONE": "Téléphone",
+  "LIKNS": "LIENS"
+}
