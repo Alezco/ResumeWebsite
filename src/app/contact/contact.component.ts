@@ -27,10 +27,10 @@ export class ContactComponent {
   handleResponse(response) {
     if (response.status === 'success') {
       this.message = {name: '', email: '', message: ''};
-      alert(this._translateService.get('CONTACT.MESSAGESENT'));
+      alert(this._translateService.get('CONTACT.MESSAGESENT')['value']);
     }
     if (response.status === 'error') {
-      alert(this._translateService.get('CONTACT.MESSAGENOTSENT'));
+      alert(this._translateService.get('CONTACT.MESSAGENOTSENT')['value']);
     }
   }
 }
