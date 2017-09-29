@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 
 import { ContactService } from './contact/contact.service';
+import {MdButtonModule, MdInputModule} from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 export function createTranslateLoader(http: Http) {
   return new TranslateStaticLoader(http, 'i18n', '.json');
@@ -29,6 +31,9 @@ export function createTranslateLoader(http: Http) {
       deps: [Http]
     }),
     ScrollToModule.forRoot(),
+    MdButtonModule,
+    BrowserAnimationsModule,
+    MdInputModule,
   ],
   providers: [ContactService],
   bootstrap: [AppComponent]
