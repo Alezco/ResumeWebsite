@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ContactService } from './contact.service';
 import { Email } from './email-interface';
-import {TranslateService} from "ng2-translate";
+import { TranslateService } from 'ng2-translate';
 
 @Component({
   selector: 'app-contact',
